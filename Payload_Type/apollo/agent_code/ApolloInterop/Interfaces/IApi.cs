@@ -1,13 +1,13 @@
-﻿using ApolloInterop.Classes;
+﻿using NotpolloInterop.Classes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO.Pipes;
-using ApolloInterop.Classes.Api;
-using ApolloInterop.Classes.Core;
+using NotpolloInterop.Classes.Api;
+using NotpolloInterop.Classes.Core;
 
-namespace ApolloInterop.Interfaces
+namespace NotpolloInterop.Interfaces
 {
     public interface IApi
     {

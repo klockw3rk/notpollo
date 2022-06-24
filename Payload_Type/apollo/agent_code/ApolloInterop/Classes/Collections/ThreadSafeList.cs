@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ApolloInterop.Classes.Collections
+namespace NotpolloInterop.Classes.Collections
 {
     public class ThreadSafeList<T> : IList<T>
     {

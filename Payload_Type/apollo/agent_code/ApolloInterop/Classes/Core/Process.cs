@@ -1,13 +1,13 @@
-﻿using ApolloInterop.Classes.Events;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.ApolloStructs;
+﻿using NotpolloInterop.Classes.Events;
+using NotpolloInterop.Interfaces;
+using NotpolloInterop.Structs.NotpolloStructs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace ApolloInterop.Classes.Core
+namespace NotpolloInterop.Classes.Core
 {
     public abstract class Process : IProcess
     {
@@ -67,7 +67,7 @@ namespace ApolloInterop.Classes.Core
 
         public abstract bool Start();
 
-        public abstract bool StartWithCredentials(ApolloLogonInformation logonInfo);
+        public abstract bool StartWithCredentials(NotpolloLogonInformation logonInfo);
 
         public abstract bool StartWithCredentials(IntPtr hToken);
 

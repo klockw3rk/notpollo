@@ -1,13 +1,13 @@
-﻿using ApolloInterop.Classes.Events;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
-using ApolloInterop.Types.Delegates;
+﻿using NotpolloInterop.Classes.Events;
+using NotpolloInterop.Interfaces;
+using NotpolloInterop.Structs.MythicStructs;
+using NotpolloInterop.Types.Delegates;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ApolloInterop.Classes.Core
+namespace NotpolloInterop.Classes.Core
 {
     public class ChunkedMessageStore<T> where T : IChunkMessage
     {

@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using ApolloInterop.Types.Delegates;
-using ApolloInterop.Structs.MythicStructs;
+using NotpolloInterop.Types.Delegates;
+using NotpolloInterop.Structs.MythicStructs;
 using System.Threading;
 
-namespace ApolloInterop.Interfaces
+namespace NotpolloInterop.Interfaces
 {
     public interface IAgent
     {

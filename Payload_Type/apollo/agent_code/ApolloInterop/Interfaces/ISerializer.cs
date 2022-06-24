@@ -1,12 +1,12 @@
-﻿using ApolloInterop.Enums.ApolloEnums;
-using ApolloInterop.Structs.ApolloStructs;
+﻿using NotpolloInterop.Enums.NotpolloEnums;
+using NotpolloInterop.Structs.NotpolloStructs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using ApolloInterop.Constants;
+using NotpolloInterop.Constants;
 
-namespace ApolloInterop.Interfaces
+namespace NotpolloInterop.Interfaces
 {
     public interface ISerializer
     {

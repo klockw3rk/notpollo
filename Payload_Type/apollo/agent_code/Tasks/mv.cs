@@ -9,10 +9,10 @@
 using System;
 using System.IO;
 using System.Runtime.Serialization;
-using ApolloInterop.Classes;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
-using ApolloInterop.Utils;
+using NotpolloInterop.Classes;
+using NotpolloInterop.Interfaces;
+using NotpolloInterop.Structs.MythicStructs;
+using NotpolloInterop.Utils;
 using ST = System.Threading.Tasks;
 
 

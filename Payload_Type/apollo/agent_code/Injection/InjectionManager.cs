@@ -1,5 +1,5 @@
-﻿using ApolloInterop.Classes.Core;
-using ApolloInterop.Interfaces;
+﻿using NotpolloInterop.Classes.Core;
+using NotpolloInterop.Interfaces;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;

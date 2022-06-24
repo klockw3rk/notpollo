@@ -1,11 +1,11 @@
-﻿using ApolloInterop.Structs.ApolloStructs;
+﻿using NotpolloInterop.Structs.NotpolloStructs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Sockets;
 using System.Text;
 
-namespace ApolloInterop.Interfaces
+namespace NotpolloInterop.Interfaces
 {
     public interface ITcpClientCallback
     {

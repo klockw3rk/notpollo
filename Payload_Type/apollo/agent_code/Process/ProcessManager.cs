@@ -1,5 +1,5 @@
-﻿using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.ApolloStructs;
+﻿using NotpolloInterop.Interfaces;
+using NotpolloInterop.Structs.NotpolloStructs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -39,7 +39,7 @@ namespace Process
             return results;
         }
 
-        public ApolloInterop.Classes.Core.Process NewProcess(string lpApplication, string lpArguments, bool startSuspended = false)
+        public NotpolloInterop.Classes.Core.Process NewProcess(string lpApplication, string lpArguments, bool startSuspended = false)
         {
             return new SacrificialProcess(
                 _agent,

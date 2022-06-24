@@ -1,11 +1,11 @@
-﻿using ApolloInterop.Structs.ApolloStructs;
+﻿using NotpolloInterop.Structs.NotpolloStructs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace ApolloInterop.Interfaces
+namespace NotpolloInterop.Interfaces
 {
     public interface IProcess
     {
@@ -14,7 +14,7 @@ namespace ApolloInterop.Interfaces
         void WaitForExit(int milliseconds);
 
         bool Start();
-        bool StartWithCredentials(ApolloLogonInformation logonInfo);
+        bool StartWithCredentials(NotpolloLogonInformation logonInfo);
 
         bool StartWithCredentials(IntPtr hToken);
 

@@ -4,10 +4,10 @@ using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using ApolloInterop.Classes;
-using ApolloInterop.Interfaces;
+using NotpolloInterop.Classes;
+using NotpolloInterop.Interfaces;
 
-namespace Apollo.Api.Cryptography
+namespace Notpollo.Api.Cryptography
 {
     public static class RSA
     {

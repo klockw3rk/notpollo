@@ -1,4 +1,4 @@
-﻿namespace ApolloInterop.Interfaces
+﻿namespace NotpolloInterop.Interfaces
 {
     public interface ICryptographicRoutine
     {

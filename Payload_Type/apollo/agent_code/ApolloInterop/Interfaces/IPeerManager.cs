@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using ApolloInterop.Classes.P2P;
-using ApolloInterop.Structs.MythicStructs;
-namespace ApolloInterop.Interfaces
+using NotpolloInterop.Classes.P2P;
+using NotpolloInterop.Structs.MythicStructs;
+namespace NotpolloInterop.Interfaces
 {
     public interface IPeerManager
     {

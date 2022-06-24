@@ -1,7 +1,7 @@
 ﻿using System;
-using ApolloInterop.Classes.Api;
+using NotpolloInterop.Classes.Api;
 
-namespace ApolloInterop.Interfaces
+namespace NotpolloInterop.Interfaces
 {
     public interface IWin32ApiResolver
     {

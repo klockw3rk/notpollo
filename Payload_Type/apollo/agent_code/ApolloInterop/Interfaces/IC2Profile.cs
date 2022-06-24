@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using ApolloInterop.Structs.MythicStructs;
-using ApolloInterop.Types.Delegates;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Enums.ApolloEnums;
+using NotpolloInterop.Structs.MythicStructs;
+using NotpolloInterop.Types.Delegates;
+using NotpolloInterop.Interfaces;
+using NotpolloInterop.Enums.NotpolloEnums;
 
-namespace ApolloInterop.Interfaces
+namespace NotpolloInterop.Interfaces
 {
     public interface IC2Profile
     {

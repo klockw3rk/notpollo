@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.IO;
 using System.Security.Cryptography;
-using ApolloInterop.Interfaces;
+using NotpolloInterop.Interfaces;
 
-namespace ApolloInterop.Classes
+namespace NotpolloInterop.Classes
 {
     abstract public class CryptographyProvider : ICryptography
     {

@@ -1,5 +1,5 @@
-﻿using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.ApolloStructs;
+﻿using NotpolloInterop.Interfaces;
+using NotpolloInterop.Structs.NotpolloStructs;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -9,7 +9,7 @@ using System.Security.AccessControl;
 using System.Text;
 using System.Security.Principal;
 
-namespace ApolloInterop.Classes
+namespace NotpolloInterop.Classes
 {
     public class AsyncNamedPipeServer
     {

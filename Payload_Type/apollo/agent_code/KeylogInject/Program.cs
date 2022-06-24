@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Runtime.InteropServices;
-using ApolloInterop.Classes.Collections;
-using ApolloInterop.Structs.ApolloStructs;
-using ApolloInterop.Serializers;
+using NotpolloInterop.Classes.Collections;
+using NotpolloInterop.Structs.NotpolloStructs;
+using NotpolloInterop.Serializers;
 using ST=System.Threading.Tasks;
 using System.Threading;
 using System.Windows.Forms;
 using static KeylogInject.Native;
 using System.Collections.Concurrent;
-using ApolloInterop.Classes;
+using NotpolloInterop.Classes;
 using System.IO.Pipes;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Constants;
-using ApolloInterop.Structs.MythicStructs;
+using NotpolloInterop.Interfaces;
+using NotpolloInterop.Constants;
+using NotpolloInterop.Structs.MythicStructs;
 
 namespace KeylogInject
 {

@@ -2,18 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using AI = ApolloInterop;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
+using AI = NotpolloInterop;
+using NotpolloInterop.Interfaces;
+using NotpolloInterop.Structs.MythicStructs;
 using System.Collections.Concurrent;
-using ApolloInterop.Classes;
+using NotpolloInterop.Classes;
 using System.Net.Sockets;
-using ApolloInterop.Structs.ApolloStructs;
-using ApolloInterop.Enums.ApolloEnums;
-using static ApolloInterop.Structs.MythicStructs.MessageResponse;
+using NotpolloInterop.Structs.NotpolloStructs;
+using NotpolloInterop.Enums.NotpolloEnums;
+using static NotpolloInterop.Structs.MythicStructs.MessageResponse;
 using System.Net;
 
-namespace Apollo.Management.Socks
+namespace Notpollo.Management.Socks
 {
     public class SocksManager : AI.Classes.SocksManager
     {

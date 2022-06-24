@@ -2,21 +2,21 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using ApolloInterop.Classes.IO;
+using NotpolloInterop.Classes.IO;
 using System.Management.Automation.Runspaces;
-using ApolloInterop.Serializers;
+using NotpolloInterop.Serializers;
 using System.Collections.Concurrent;
-using ApolloInterop.Classes;
+using NotpolloInterop.Classes;
 using System.Threading;
-using ApolloInterop.Classes.Core;
-using ApolloInterop.Structs.ApolloStructs;
-using ApolloInterop.Interfaces;
+using NotpolloInterop.Classes.Core;
+using NotpolloInterop.Structs.NotpolloStructs;
+using NotpolloInterop.Interfaces;
 using ST = System.Threading.Tasks;
-using ApolloInterop.Enums.ApolloEnums;
+using NotpolloInterop.Enums.NotpolloEnums;
 using System.IO;
 using System.IO.Pipes;
-using ApolloInterop.Constants;
-using ApolloInterop.Classes.Events;
+using NotpolloInterop.Constants;
+using NotpolloInterop.Classes.Events;
 
 namespace PowerShellHost
 {
@@ -118,7 +118,7 @@ namespace PowerShellHost
 
         }
 
-        private static void OnBufferWrite(object sender, ApolloInterop.Classes.Events.StringDataEventArgs e)
+        private static void OnBufferWrite(object sender, NotpolloInterop.Classes.Events.StringDataEventArgs e)
         {
             if (e.Data != null)
             {

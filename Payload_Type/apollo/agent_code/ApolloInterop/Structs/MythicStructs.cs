@@ -6,13 +6,13 @@ using System.Text;
 using sCredentialType = System.String;
 using sStatusMessage = System.String;
 using sMessageAction = System.String;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Enums.ApolloEnums;
+using NotpolloInterop.Interfaces;
+using NotpolloInterop.Enums.NotpolloEnums;
 using System.Net;
 using System.IO;
-using ApolloInterop.Structs.ApolloStructs;
+using NotpolloInterop.Structs.NotpolloStructs;
 
-namespace ApolloInterop.Structs
+namespace NotpolloInterop.Structs
 {
 
     namespace MythicStructs
@@ -718,8 +718,8 @@ namespace ApolloInterop.Structs
             public string ChunkData;
             [DataMember(Name = "file_id")]
             public string FileID;
-            [DataMember(Name = "apollo_tracker_uuid")]
-            public string ApolloTrackerUUID;
+            [DataMember(Name = "Notpollo_tracker_uuid")]
+            public string NotpolloTrackerUUID;
         }
 
         [DataContract]
@@ -775,8 +775,8 @@ namespace ApolloInterop.Structs
             public CommandInformation[] Commands;
             [DataMember(Name = "process_response")]
             public ProcessResponse? ProcessResponse;
-            [DataMember(Name = "apollo_tracker_uuid")]
-            public string ApolloTrackerUUID;
+            [DataMember(Name = "Notpollo_tracker_uuid")]
+            public string NotpolloTrackerUUID;
 
             public override bool Equals(object obj)
             {

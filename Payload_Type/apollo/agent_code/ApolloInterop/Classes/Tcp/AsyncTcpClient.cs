@@ -1,11 +1,11 @@
-﻿using ApolloInterop.Constants;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.ApolloStructs;
+﻿using NotpolloInterop.Constants;
+using NotpolloInterop.Interfaces;
+using NotpolloInterop.Structs.NotpolloStructs;
 using System;
 using System.Net;
 using System.Net.Sockets;
 
-namespace ApolloInterop.Classes
+namespace NotpolloInterop.Classes
 {
     public class AsyncTcpClient
     {

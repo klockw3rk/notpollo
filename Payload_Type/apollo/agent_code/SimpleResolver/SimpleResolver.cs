@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.InteropServices;
-using ApolloInterop.Classes.Api;
-using ApolloInterop.Interfaces;
+using NotpolloInterop.Classes.Api;
+using NotpolloInterop.Interfaces;
 
 namespace SimpleResolver
 {

@@ -6,12 +6,12 @@
 
 #if RUN
 
-using ApolloInterop.Classes;
-using ApolloInterop.Classes.Api;
-using ApolloInterop.Classes.Core;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.ApolloStructs;
-using ApolloInterop.Structs.MythicStructs;
+using NotpolloInterop.Classes;
+using NotpolloInterop.Classes.Api;
+using NotpolloInterop.Classes.Core;
+using NotpolloInterop.Interfaces;
+using NotpolloInterop.Structs.NotpolloStructs;
+using NotpolloInterop.Structs.MythicStructs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -129,7 +129,7 @@ namespace Tasks
             _complete.Set();
         }
 
-        private void DataReceived(object sender, ApolloInterop.Classes.Events.StringDataEventArgs e)
+        private void DataReceived(object sender, NotpolloInterop.Classes.Events.StringDataEventArgs e)
         {
             if (!string.IsNullOrEmpty(e.Data))
             {

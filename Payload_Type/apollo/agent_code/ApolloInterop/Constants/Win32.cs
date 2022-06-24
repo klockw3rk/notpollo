@@ -4,7 +4,7 @@ using System.Linq;
 using System.Security.Principal;
 using System.Text;
 
-namespace ApolloInterop.Constants
+namespace NotpolloInterop.Constants
 {
     public static class Win32
     {

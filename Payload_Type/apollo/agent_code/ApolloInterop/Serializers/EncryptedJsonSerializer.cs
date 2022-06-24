@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using ApolloInterop.Enums.ApolloEnums;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.ApolloStructs;
-using ApolloInterop.Types;
+using NotpolloInterop.Enums.NotpolloEnums;
+using NotpolloInterop.Interfaces;
+using NotpolloInterop.Structs.NotpolloStructs;
+using NotpolloInterop.Types;
 
-namespace ApolloInterop.Serializers
+namespace NotpolloInterop.Serializers
 {
     public class EncryptedJsonSerializer : JsonSerializer, ICryptographySerializer
     {

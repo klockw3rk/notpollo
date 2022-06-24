@@ -5,7 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace ApolloInterop.Utils
+namespace NotpolloInterop.Utils
 {
     public static class PathUtils
     {

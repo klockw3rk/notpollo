@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
-using static ApolloInterop.Enums.Win32;
+using static NotpolloInterop.Enums.Win32;
 
-namespace ApolloInterop.Structs
+namespace NotpolloInterop.Structs
 {
     public static class Win32
     {

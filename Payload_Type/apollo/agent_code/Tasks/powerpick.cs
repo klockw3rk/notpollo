@@ -10,18 +10,18 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using ApolloInterop.Classes;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
+using NotpolloInterop.Classes;
+using NotpolloInterop.Interfaces;
+using NotpolloInterop.Structs.MythicStructs;
 using System.Runtime.Serialization;
-using ApolloInterop.Serializers;
+using NotpolloInterop.Serializers;
 using System.Threading;
 using System.IO;
 using System.Collections.Concurrent;
 using System.IO.Pipes;
-using ApolloInterop.Structs.ApolloStructs;
-using ApolloInterop.Classes.Core;
-using ApolloInterop.Classes.Collections;
+using NotpolloInterop.Structs.NotpolloStructs;
+using NotpolloInterop.Classes.Core;
+using NotpolloInterop.Classes.Collections;
 
 namespace Tasks
 {

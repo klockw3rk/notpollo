@@ -2,25 +2,25 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
-using ApolloInterop.Types.Delegates;
-using ApolloInterop.Classes;
-using AM = Apollo.Management;
-using Apollo.Api;
-using Apollo;
+using NotpolloInterop.Interfaces;
+using NotpolloInterop.Structs.MythicStructs;
+using NotpolloInterop.Types.Delegates;
+using NotpolloInterop.Classes;
+using AM = Notpollo.Management;
+using Notpollo.Api;
+using Notpollo;
 using System.Reflection;
 using System.Net;
 using System.Net.Sockets;
 using System.Diagnostics;
 using Microsoft.Win32;
 
-namespace Apollo.Agent
+namespace Notpollo.Agent
 {
-    public class Apollo : ApolloInterop.Classes.Agent
+    public class Notpollo : NotpolloInterop.Classes.Agent
     {
 
-        public Apollo(string uuid) : base(uuid)
+        public Notpollo(string uuid) : base(uuid)
         {
             Api = new Api.Api();
             C2ProfileManager = new AM.C2.C2ProfileManager(this);

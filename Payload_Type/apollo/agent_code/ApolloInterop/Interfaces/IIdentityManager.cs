@@ -1,12 +1,12 @@
-﻿using ApolloInterop.Structs.ApolloStructs;
-using ApolloInterop.Structs.MythicStructs;
+﻿using NotpolloInterop.Structs.NotpolloStructs;
+using NotpolloInterop.Structs.MythicStructs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Principal;
 using System.Text;
 
-namespace ApolloInterop.Interfaces
+namespace NotpolloInterop.Interfaces
 {
     public interface IIdentityManager
     {
@@ -14,7 +14,7 @@ namespace ApolloInterop.Interfaces
         WindowsIdentity GetCurrentImpersonationIdentity();
         WindowsIdentity GetOriginal();
 
-        bool GetCurrentLogonInformation(out ApolloLogonInformation logonInfo);
+        bool GetCurrentLogonInformation(out NotpolloLogonInformation logonInfo);
 
         void Revert();
 
@@ -25,7 +25,7 @@ namespace ApolloInterop.Interfaces
         void SetImpersonationIdentity(WindowsIdentity identity);
         void SetImpersonationIdentity(IntPtr hToken);
 
-        bool SetIdentity(ApolloLogonInformation token);
+        bool SetIdentity(NotpolloLogonInformation token);
 
         IntegrityLevel GetIntegrityLevel();
 

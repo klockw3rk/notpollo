@@ -1,10 +1,10 @@
-﻿using ApolloInterop.Interfaces;
+﻿using NotpolloInterop.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ApolloInterop.Classes.Events
+namespace NotpolloInterop.Classes.Events
 {
     public class ChunkMessageEventArgs<T> : EventArgs where T : IChunkMessage
     {

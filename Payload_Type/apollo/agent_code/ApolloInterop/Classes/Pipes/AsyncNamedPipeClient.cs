@@ -1,13 +1,13 @@
-﻿using ApolloInterop.Constants;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.ApolloStructs;
+﻿using NotpolloInterop.Constants;
+using NotpolloInterop.Interfaces;
+using NotpolloInterop.Structs.NotpolloStructs;
 using System;
 using System.Collections.Generic;
 using System.IO.Pipes;
 using System.Linq;
 using System.Text;
 
-namespace ApolloInterop.Classes
+namespace NotpolloInterop.Classes
 {
     public class AsyncNamedPipeClient
     {

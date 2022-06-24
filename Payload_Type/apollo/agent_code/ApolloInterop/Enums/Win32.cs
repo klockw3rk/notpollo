@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ApolloInterop.Enums
+namespace NotpolloInterop.Enums
 {
     public static class Win32
     {

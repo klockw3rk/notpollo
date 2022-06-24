@@ -1,5 +1,5 @@
-﻿using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.ApolloStructs;
+﻿using NotpolloInterop.Interfaces;
+using NotpolloInterop.Structs.NotpolloStructs;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -11,7 +11,7 @@ using System.Security.Principal;
 using System.Net;
 using System.Net.Sockets;
 
-namespace ApolloInterop.Classes
+namespace NotpolloInterop.Classes
 {
     public class AsyncTcpServer
     {

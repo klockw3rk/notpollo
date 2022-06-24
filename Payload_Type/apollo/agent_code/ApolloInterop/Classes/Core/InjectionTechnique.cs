@@ -1,13 +1,13 @@
-﻿using ApolloInterop.Classes.Api;
-using ApolloInterop.Interfaces;
-using static ApolloInterop.Enums.Win32;
+﻿using NotpolloInterop.Classes.Api;
+using NotpolloInterop.Interfaces;
+using static NotpolloInterop.Enums.Win32;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.ComponentModel;
 
-namespace ApolloInterop.Classes.Core
+namespace NotpolloInterop.Classes.Core
 {
     public abstract class InjectionTechnique : IInjectionTechnique
     {

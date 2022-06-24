@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ApolloInterop.Utils
+namespace NotpolloInterop.Utils
 {
     public static class RegistryUtils
     {

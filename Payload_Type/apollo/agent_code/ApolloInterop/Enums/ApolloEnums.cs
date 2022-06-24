@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ApolloInterop.Enums
+namespace NotpolloInterop.Enums
 {
-    namespace ApolloEnums
+    namespace NotpolloEnums
     {
         public enum Socks5Error
         {

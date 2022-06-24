@@ -1,26 +1,26 @@
 ﻿using System;
 using PSKCryptography;
 using HttpTransport;
-using ApolloInterop.Serializers;
+using NotpolloInterop.Serializers;
 using System.Collections.Generic;
-using ApolloInterop.Structs.MythicStructs;
-using Apollo.Agent;
-using ApolloInterop.Classes;
-using ApolloInterop.Interfaces;
+using NotpolloInterop.Structs.MythicStructs;
+using Notpollo.Agent;
+using NotpolloInterop.Classes;
+using NotpolloInterop.Interfaces;
 using System.IO.Pipes;
-using ApolloInterop.Structs.ApolloStructs;
+using NotpolloInterop.Structs.NotpolloStructs;
 using System.Text;
 using System.Threading;
-using Apollo.Peers.SMB;
+using Notpollo.Peers.SMB;
 using System.Linq;
 using System.Collections.Concurrent;
 using System.Runtime.InteropServices;
-using ApolloInterop.Classes.Core;
-using ApolloInterop.Classes.Events;
-using ApolloInterop.Enums.ApolloEnums;
+using NotpolloInterop.Classes.Core;
+using NotpolloInterop.Classes.Events;
+using NotpolloInterop.Enums.NotpolloEnums;
 using System.Diagnostics;
 
-namespace Apollo
+namespace Notpollo
 {
     class Program
     {
@@ -87,7 +87,7 @@ namespace Apollo
             //}
 
             // This is main execution.
-            Agent.Apollo ap = new Agent.Apollo(Config.PayloadUUID);
+            Agent.Notpollo ap = new Agent.Notpollo(Config.PayloadUUID);
             ap.Start();
         }
 

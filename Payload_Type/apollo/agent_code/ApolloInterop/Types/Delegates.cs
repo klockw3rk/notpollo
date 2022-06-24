@@ -1,10 +1,10 @@
-﻿using ApolloInterop.Enums.ApolloEnums;
+﻿using NotpolloInterop.Enums.NotpolloEnums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ApolloInterop.Types
+namespace NotpolloInterop.Types
 {
     namespace Delegates
     {

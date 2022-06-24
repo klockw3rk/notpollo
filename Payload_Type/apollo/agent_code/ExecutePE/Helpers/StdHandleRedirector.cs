@@ -10,7 +10,7 @@ using static ExecutePE.Internals.NativeDeclarations;
 using Microsoft.Win32.SafeHandles;
 using System.Threading.Tasks;
 using System.Threading;
-using ApolloInterop.Classes.Events;
+using NotpolloInterop.Classes.Events;
 
 namespace ExecutePE.Helpers
 {

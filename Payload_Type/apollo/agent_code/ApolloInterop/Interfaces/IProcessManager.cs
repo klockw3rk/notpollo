@@ -1,11 +1,11 @@
-﻿using ApolloInterop.Classes.Core;
-using ApolloInterop.Structs.ApolloStructs;
+﻿using NotpolloInterop.Classes.Core;
+using NotpolloInterop.Structs.NotpolloStructs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ApolloInterop.Interfaces
+namespace NotpolloInterop.Interfaces
 {
     public interface IProcessManager
     {

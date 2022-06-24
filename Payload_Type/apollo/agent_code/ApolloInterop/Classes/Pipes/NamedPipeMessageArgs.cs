@@ -1,11 +1,11 @@
-﻿using ApolloInterop.Structs.ApolloStructs;
+﻿using NotpolloInterop.Structs.NotpolloStructs;
 using System;
 using System.Collections.Generic;
 using System.IO.Pipes;
 using System.Linq;
 using System.Text;
 
-namespace ApolloInterop.Classes
+namespace NotpolloInterop.Classes
 {
     public class NamedPipeMessageArgs : EventArgs
     {

@@ -1,8 +1,8 @@
 ﻿using System.IO;
 using System.Security.Cryptography;
-using ApolloInterop.Interfaces;
+using NotpolloInterop.Interfaces;
 
-namespace ApolloInterop.Classes.Cryptography
+namespace NotpolloInterop.Classes.Cryptography
 {
     public class AesRoutine : ICryptographicRoutine
     {

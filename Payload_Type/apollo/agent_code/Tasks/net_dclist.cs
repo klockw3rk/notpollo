@@ -6,9 +6,9 @@
 
 #if NET_DCLIST
 
-using ApolloInterop.Classes;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
+using NotpolloInterop.Classes;
+using NotpolloInterop.Interfaces;
+using NotpolloInterop.Structs.MythicStructs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -38,7 +38,7 @@ namespace Tasks
             [DataMember(Name = "global_catalog")]
             public bool IsGlobalCatalog;
         }
-        public net_dclist(IAgent agent, ApolloInterop.Structs.MythicStructs.Task data) : base(agent, data)
+        public net_dclist(IAgent agent, NotpolloInterop.Structs.MythicStructs.Task data) : base(agent, data)
         {
         }
 

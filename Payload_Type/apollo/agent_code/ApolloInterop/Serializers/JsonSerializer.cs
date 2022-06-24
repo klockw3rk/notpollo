@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using ApolloInterop.Interfaces;
+using NotpolloInterop.Interfaces;
 using System.IO;
 using System.Runtime.Serialization.Json;
-using ApolloInterop.Structs.ApolloStructs;
-using ApolloInterop.Types;
-using ApolloInterop.Enums.ApolloEnums;
+using NotpolloInterop.Structs.NotpolloStructs;
+using NotpolloInterop.Types;
+using NotpolloInterop.Enums.NotpolloEnums;
 using System.Diagnostics;
 using System.Reflection;
-using ApolloInterop.Structs.MythicStructs;
+using NotpolloInterop.Structs.MythicStructs;
 
-namespace ApolloInterop.Serializers
+namespace NotpolloInterop.Serializers
 {
     public class JsonSerializer : ISerializer
     {
@@ -22,7 +22,7 @@ namespace ApolloInterop.Serializers
             //Assembly interopAsm = Assembly.GetAssembly(typeof(TaskResponse));
             //foreach(Type t in interopAsm.GetTypes())
             //{
-            //    if (t.FullName.StartsWith("ApolloInterop.Structs.MythicStructs") || t.FullName.StartsWith("ApolloInterop.Structs.ApolloStructs"))
+            //    if (t.FullName.StartsWith("NotpolloInterop.Structs.MythicStructs") || t.FullName.StartsWith("NotpolloInterop.Structs.NotpolloStructs"))
             //    {
             //        _knownTypes.Add(t);
             //    }
